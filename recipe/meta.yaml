@@ -29,7 +29,7 @@ requirements:
     - numpy
     - pip
     - qhull
-    - setuptools
+    - setuptools <80
   run:
     - python
     - numpy
