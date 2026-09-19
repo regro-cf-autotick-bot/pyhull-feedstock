@@ -28,13 +28,13 @@ requirements:
     - python
     - numpy
     - pip
-    - qhull
+    - qhull-static
     - setuptools <80
   run:
     - python
     - numpy
     - pip
-    - qhull
+    - qhull-static
 
 test:
   imports:
