@@ -13,9 +13,7 @@ source:
 
 build:
   number: 9
-  script:
-    - export LIBRARY_PREFIX=$PREFIX/lib          # [unix]
-    - "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
