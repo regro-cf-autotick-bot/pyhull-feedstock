@@ -15,7 +15,7 @@ build:
   number: 9
   script:
     - export LIBRARY_PREFIX=$PREFIX          # [unix]
-    - "{{ PYTHON }} -m pip install . -vvv"
+    - "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
 
 requirements:
   build:
@@ -28,7 +28,8 @@ requirements:
     - python
     - numpy
     - pip
-    - qhull 
+    - qhull
+    - setuptools
   run:
     - python
     - numpy
